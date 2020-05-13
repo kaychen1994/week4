@@ -1,0 +1,56 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: location
+---
+<section>
+    <div class="banner">
+        <div class="title container d-flex">
+            <h2 class="text-bold">門市據點</h2>
+            <img src="assets/images/iconfinder_location_1585851.svg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="branch d-flex ai-c">
+            <label for="branch-sel" class="text-bold">選擇分店</label>
+            <select id="branch-sel">
+                <option value="zhongshan">台北中山旗艦店</option>
+                <option value="xìnyì">台北信義店</option>
+                <option value="shilin">台北士林店</option>
+                <option value="station">台北站前店</option>
+            </select>
+        </div>
+        <ul class="loc-info d-flex jc-sb">
+            <li class="branch-intro">
+                <img src="assets/images/70.png" alt="" class="branch-img">
+                <div>
+                    <div class="branch-name text-bold branch-border">
+                        台北中山旗艦店
+                    </div>
+                    <ul class="branch-info branch-border">
+                        <li class="d-flex"> 
+                            <img src="assets/images/iconfinder_Essentials_phone_telephone_vintage_5298737.svg" alt="">
+                            <p>電話：(02)000-1234</p>
+                        </li>
+                        <li class="d-flex">
+                            <img src="assets/images/iconfinder_Essentials_time_clock_timer_5298770.svg" alt="">
+                            <p>營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="d-flex">
+                            <img src="assets/images/iconfinder_Essentials_pin_map_location_5298741.svg" alt="">
+                            <p>地址：台北市中山區南京東路25巷2-1號</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button type="button" class="loc-btn">
+                    詳細資訊
+                </button>
+            </li>
+            <li>
+                <img src="assets/images/map.png" alt="">
+            </li>
+        </ul>
+    </div>
+</section>

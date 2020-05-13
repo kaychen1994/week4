@@ -1,0 +1,41 @@
+header{
+    height: 840px;
+    background-image: url(https://upload.cc/i1/2020/05/07/hPIzjM.png);
+    h2{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2.25rem;
+    }
+    .header-flex{
+        height: 840px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+@media (max-width: 768px){
+    header{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+    }
+}
+@media (max-width: 375px){
+    header{
+        height: 394px;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .header-flex{
+            height: 394px;
+        }
+    }  
+}

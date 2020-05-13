@@ -1,0 +1,131 @@
+footer{
+    height: 338px;
+    background-color: $primary;
+    .f-link{
+        padding-top: 2.25rem;
+        margin-bottom: 1.125em;
+    }
+    .menu li{
+        margin-right: 3rem;
+    }
+    .follow li{
+        margin-left: 2rem;
+    }
+    .info{
+        font-size: 2.25rem;
+    }
+    .phone{
+        margin-bottom: 1rem;
+        img{
+            margin-right: 23px;
+        }
+    }
+    .mail{
+        margin-bottom: 1.5rem;
+        img{
+            margin-right: 12px;
+        }
+    }
+    hr{
+        color: $white;
+        margin-bottom: 1.5rem;
+    }
+    .copyRight img{
+        margin-right: 2.375rem;
+    }
+    .privacy a{
+        margin-left: 3.875rem;
+    }
+}
+@media (max-width: 768px){
+    footer{
+        height: 261px;
+        .f-link{
+            padding-top: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .menu li{
+            margin-right: 2.5rem;
+        }
+        .follow {
+            li{
+                margin-left: 1.5rem;
+            }
+            img{
+                width: 1.5rem;
+            }
+        }
+        .info{
+            font-size: 1.25rem;
+        }
+        .phone{
+            margin-bottom: 0.5rem;
+            img{
+                width: 23px;
+                margin-right: 0.75rem;
+            }
+        }
+        .mail{
+            margin-bottom: 27px;
+            img{
+                width: 32px;
+                margin-right: 0.5rem;
+            }
+        }
+        .copyRight img{
+            display: none;
+        }
+    }
+}
+@media (max-width: 375px){
+    footer {
+        height: 213px;
+        position: relative;
+        .menu{
+            display: none;
+        }
+        .f-link{
+            padding-top: 1.5rem;
+        }
+        .info{
+            font-size: 1rem;
+            position: absolute;
+            left: 0.75rem;
+            top: 1.5rem;
+        }
+        .phone{
+            margin-bottom: 0.5rem;
+            img{
+                width: 13px;
+                margin-right: 0.5rem;
+            }
+        }
+        .mail{
+            img{
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+        hr{
+            margin-top: 3rem;
+        }
+        .copyRight{
+            position: absolute;
+            left: 0.75rem;
+            top: 7rem;
+            img{
+                width: 46px;
+                display: block;
+                position: absolute;
+                right: -4rem;
+                top: 3rem;
+            }
+        }
+        .privacy{
+            flex-direction: column;
+            position: absolute;
+            left: -3rem;
+            top: 9rem;
+        }
+    }
+}

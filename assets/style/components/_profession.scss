@@ -1,0 +1,63 @@
+.profession{
+    height: 544px;
+}
+.pro-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serviceList{
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    padding-right: 37px;
+    padding-left: 37px;
+    img{
+        margin-bottom: 2.5rem;
+    }
+    span{
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px){
+    .profession{
+        height: 668px;
+    }
+    .pro-flex{
+        flex-wrap: wrap;
+    }
+    .serviceList{
+        width: 20.25rem;
+        padding-bottom: 0.5rem;
+        padding-right: 3.125rem;
+        padding-left: 3.125rem;
+        img{
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+@media (max-width: 375px){
+    .profession{
+        height: 1091px;
+        h3{
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .pro-flex li img{
+        width: 5rem;
+    }
+    .serviceList{
+        width: 14rem;
+        margin: 0 auto;
+        padding-bottom: 1.75rem;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,106 @@
+/* design */
+.design{
+    height: 2162px;
+    background-image: url(https://upload.cc/i1/2020/05/07/cjdRpz.png);
+    .design-mr{
+        margin-right: 8px;
+    }
+    .design-mb{
+        margin-bottom: 8px;
+    }
+}
+.design-gallery{
+    margin-right: -170px;
+    margin-left: -170px;
+    margin-bottom: 3.75rem;
+}
+.more{
+    align-self: flex-end;
+    margin-right: 83px;
+}
+.gallery-b{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+    span{
+        font-size: 4.5rem;
+        z-index: 10;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        height: 592px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .double{
+        background-image: url(https://upload.cc/i1/2020/05/13/Mf4hzp.png);
+    }
+    .youth{
+        background-image: url(https://upload.cc/i1/2020/05/13/YKNWCi.png);
+    }  
+}
+@media (max-width: 768px){
+    .design{
+        height: 1221px;
+        .design-mr{
+            margin-right: 3px;
+        }
+        .design-mb{
+            margin-bottom: 3px;
+        }
+    }  
+    .design-gallery{
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 2.5rem;
+    }
+    .gallery-l{
+        width: 251px;
+    }
+    .gallery-r{
+        width: 418px;
+    }
+    .gallery-rb{
+        margin-bottom: 0;
+    }
+    .more{
+        align-self: flex-end;
+        margin-right: 166px;
+        img{
+            width: 147px;
+            height: 77px;
+        }
+    }
+    .gallery-b{
+        margin-bottom: 40px;
+        span{
+            font-size: 2rem;
+        }
+        li{
+            width: 322px;
+            height: 280px;
+        }
+    }
+
+}
+@media (max-width: 375px){
+    .gallery-b{
+        flex-wrap: wrap;
+        li{
+            width: 352px;
+            height: 284px;
+        }
+        .double{
+            margin-bottom: 20px;
+        }
+    }
+}

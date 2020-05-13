@@ -1,0 +1,145 @@
+.banner{
+    height: 304px;
+    background-image: url(https://upload.cc/i1/2020/05/09/8k5z1V.png);
+    position: relative;
+    .title{
+        position: absolute;
+        left: 360px;
+        bottom: 0;
+        h2{
+            font-size: 4rem;
+            margin-right: 1.5rem;
+        }
+    }
+}
+.branch{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    label{
+        font-size: 1.5rem;
+        margin-right: 22px;
+    }
+    select{
+        width: 266px;
+        height: 45px;
+        font-size: 18px;
+        color: $branch-sel;
+        padding: 10px 0 10px 19px;
+    }
+}
+.loc-info{
+    margin-bottom: 156px;
+}
+.branch-name{
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 1.5rem;
+}
+.branch-info{
+    padding: 1rem 0 1rem 2.25rem;
+    li{
+        margin-bottom: 0.5rem;
+        p{
+            font-size: 20px;
+            width: 274px;
+        }
+    }
+    li:last-child{
+        margin-bottom: 0;
+    }
+    img{
+        margin-right: 0.5rem;
+    }
+}
+.loc-btn{
+    width: 100%;
+    height: 68px;
+    line-height: 68px;
+    display: block;
+    border: 0;
+    background-color: black;
+    color: $white;
+    font-size: 20px;
+    text-align: center; 
+}
+.loc-btn:hover{
+    background-color: #AA0601;
+}
+@media (max-width: 768px){
+    .banner{
+        .title{
+            left: 3rem;
+            h2{
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .branch-name{
+        font-size: 1rem;
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+    .branch-intro{
+        display: flex;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .loc-btn{
+        display: none;
+    }
+    .loc-info{
+        flex-direction: column;
+        margin-bottom: 104px;
+    }
+    .branch-img{
+        width: 324px;
+       margin-right: 1.5rem;
+    }
+    .branch-info{
+        padding: 1rem 0 1rem 1rem;
+        li{
+            p{
+                font-size: 14px;
+                width: 249px;
+            }
+        }
+    }
+}
+@media(max-width: 375px){
+    .banner{
+        height: 143px;
+        .title{
+            left: 11px;
+            h2{
+                font-size: 1.75rem;
+                margin-right: 0.5rem;
+            }
+            img{
+                width: 16.72px;
+            }
+        }
+    }
+    .branch{
+        label{
+            font-size: 14px;
+            margin-right: 1rem;
+        }
+        select{
+            width: 280px;
+            height: 2.25rem;
+            font-size: 14px;
+            padding: 0.5rem 0 0.5rem 1rem;
+        }
+        
+    }
+    .branch-intro{
+        width: 352px;
+        flex-wrap: wrap;
+        margin-bottom: 1.25rem;
+        .branch-img{
+            width: 100%;
+        }
+    }
+    .loc-info{
+        margin-bottom: 3.5rem;
+    }
+}

@@ -1,0 +1,48 @@
+.classical{
+    margin-bottom: 5rem;
+}
+.classical-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+.m-reverse{
+    margin-right: 1.5rem;
+}
+.itme-name{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    font-size: 3rem;
+}
+@media (max-width: 768px){
+    .classical{
+        margin-bottom: 2.5rem;
+    }
+    .classical-item{
+        margin-bottom: 0.5rem;
+    }
+    .classical-img{
+        width: 410.85px;
+    }
+    .flex-reverse{
+        flex-direction: row;
+    }
+    .itme-name{
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 375px){
+    .itme-name{
+        margin-left: -270px;
+    }
+    .classical-item p{
+        color: $white;
+    }
+}

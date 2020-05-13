@@ -1,0 +1,66 @@
+// setting
+.bgc-setting{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.bgc-pink{
+    background-color: $pink;
+}
+/* flex */
+.d-flex{
+    display: flex;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.ai-c{
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* text */
+.text-bold{
+    font-weight: bold;
+}
+.text-white{
+    color: $white;
+}
+.text-brown{
+    color: $secondary;
+}
+.text-red{
+    color: $primary;
+}
+
+
+/* margin */
+.mr-8{
+    margin-right: 8px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+
+// location
+
+.branch-border{
+    width: 384px;
+    border-right: 1px solid $lct-border;
+    border-left: 1px solid $lct-border;
+    border-bottom: 1px solid $lct-border;
+}
+@media(max-width: 768px){
+    .branch-border{
+        width: 324px;
+        border: 1px solid $lct-border;
+    }
+}
+@media(max-width: 375px){
+    .branch-border{
+        width: 352px;
+        border: 1px solid $lct-border;
+    }
+}

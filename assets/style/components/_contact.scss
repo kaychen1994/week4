@@ -1,0 +1,78 @@
+.contact{
+    h3{
+        margin-bottom: 0;
+    }
+    p{
+        margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+    }
+}
+.contact-px{
+    padding-right: 204px;
+    padding-left: 204px;
+}
+form label{
+  margin-bottom: 0.25rem;  
+}
+form input[type=text]{
+    width: 100%; 
+    height: 50px;
+    margin-bottom: 1rem;
+    padding: 14px 0 14px 16px;
+    border: 1px solid black;
+    /* color: #DEE2E6; */
+}
+form input[type=textarea]{
+    width: 100%;
+    height: 136px;
+    padding: 14px 0 100px 16px;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    /* color: #DEE2E6; */
+}
+.checkbox input[type=checkbox]{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 42px;
+    border: 2px solid black;
+}
+form input[type=submit]{
+    width: 180px;
+    height: 54px;
+    color: $white;  
+    background-color: $primary;
+    padding: 16px 58px 16px 58px;
+    margin-left: 306px;
+    margin-bottom: 92px;
+    font-size: 16px;
+}
+form input[type=submit]:hover{
+    background-color: $secondary;
+}
+@media (max-width: 768px){
+    .contact-px{
+        padding-right: 87px;
+        padding-left: 87px;
+    }
+    form input[type=submit]{
+        width: 136px;
+        height: 36px;
+        padding: 7px 36px 7px 36px;
+        margin-left: 11.25rem;
+        margin-bottom: 3.5rem;  
+    }
+}
+@media (max-width: 375px){
+    .contact p{
+        font-size: 1rem;
+    }
+    .contact-px{
+        padding-right: 12.5px;
+        padding-left: 12.5px;
+    }
+    form input[type=submit]{
+        margin-left: 6rem;
+        margin-bottom: 2.5rem;  
+    }
+}
